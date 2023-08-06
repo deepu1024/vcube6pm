@@ -1,0 +1,10 @@
+pipeline{
+   agent any{
+    stages{
+     stage('clone'){
+       steps{
+        https://github.com/deepu1024/vcube6pm.git
+
+	stage('build'){
+	steps{
+	sh "mvn package"
